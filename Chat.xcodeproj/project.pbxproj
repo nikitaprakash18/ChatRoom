@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4DB15533E05BB8818F307B55 /* Pods_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35690E8563AFCB0CC3C4C80 /* Pods_Chat.framework */; };
 		8D060B952130BE530002CFE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060B942130BE530002CFE8 /* AppDelegate.swift */; };
-		8D060B972130BE530002CFE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060B962130BE530002CFE8 /* ViewController.swift */; };
 		8D060B9C2130BE560002CFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D060B9B2130BE560002CFE8 /* Assets.xcassets */; };
 		8D060B9F2130BE560002CFE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D060B9D2130BE560002CFE8 /* LaunchScreen.storyboard */; };
 		8D060BA82130BE9E0002CFE8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BA62130BE9E0002CFE8 /* LoginViewController.swift */; };
@@ -20,7 +19,6 @@
 		8D060BB42130BEFF0002CFE8 /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8D060BAE2130BEFE0002CFE8 /* background.jpeg */; };
 		8D060BB52130BEFF0002CFE8 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D060BAF2130BEFE0002CFE8 /* password.png */; };
 		8D060BB62130BEFF0002CFE8 /* loginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D060BB02130BEFE0002CFE8 /* loginButton.png */; };
-		8D060BB82130C9210002CFE8 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BB72130C9210002CFE8 /* CircularTransition.swift */; };
 		8D060BBA2130CDBA0002CFE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D060BB92130CDBA0002CFE8 /* GoogleService-Info.plist */; };
 		8D060BBC2130CDEF0002CFE8 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BBB2130CDEF0002CFE8 /* AppController.swift */; };
 		8D060BBE2130CE1F0002CFE8 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BBD2130CE1F0002CFE8 /* AppSettings.swift */; };
@@ -35,12 +33,17 @@
 		8D060BD22130CE710002CFE8 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BD12130CE710002CFE8 /* ChatViewController.swift */; };
 		8D060BD42130CE7B0002CFE8 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BD32130CE7B0002CFE8 /* NavigationController.swift */; };
 		8D060BD62130DB6A0002CFE8 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D060BD52130DB6A0002CFE8 /* camera.png */; };
+		8D060BD821327EAE0002CFE8 /* chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D060BD721327EAE0002CFE8 /* chart.png */; };
+		8D060BE5213325BB0002CFE8 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D060BE4213325BA0002CFE8 /* Storyboard.storyboard */; };
+		8D060BE721333E4E0002CFE8 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BE621333E4E0002CFE8 /* ChartsViewController.swift */; };
+		8D060BED213374520002CFE8 /* ChartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D060BEC213374520002CFE8 /* ChartTableViewCell.swift */; };
+		8D060C022134C8BA0002CFE8 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D060C012134C8B90002CFE8 /* profile.png */; };
+		8D060C042135E0370002CFE8 /* charts.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D060C032135E0360002CFE8 /* charts.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D060B912130BE530002CFE8 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D060B942130BE530002CFE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D060B962130BE530002CFE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D060B9B2130BE560002CFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D060B9E2130BE560002CFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D060BA02130BE560002CFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		8D060BAE2130BEFE0002CFE8 /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
 		8D060BAF2130BEFE0002CFE8 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
 		8D060BB02130BEFE0002CFE8 /* loginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginButton.png; sourceTree = "<group>"; };
-		8D060BB72130C9210002CFE8 /* CircularTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		8D060BB92130CDBA0002CFE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8D060BBB2130CDEF0002CFE8 /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 		8D060BBD2130CE1F0002CFE8 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
@@ -67,6 +69,12 @@
 		8D060BD12130CE710002CFE8 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		8D060BD32130CE7B0002CFE8 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		8D060BD52130DB6A0002CFE8 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		8D060BD721327EAE0002CFE8 /* chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart.png; sourceTree = "<group>"; };
+		8D060BE4213325BA0002CFE8 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		8D060BE621333E4E0002CFE8 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		8D060BEC213374520002CFE8 /* ChartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartTableViewCell.swift; sourceTree = "<group>"; };
+		8D060C012134C8B90002CFE8 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		8D060C032135E0360002CFE8 /* charts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charts.png; sourceTree = "<group>"; };
 		9424A0DBF6833A2C14743104 /* Pods-Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chat/Pods-Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		A35690E8563AFCB0CC3C4C80 /* Pods_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6476414726D01EFB912A286 /* Pods-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chat/Pods-Chat.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +132,8 @@
 			children = (
 				8D060BBB2130CDEF0002CFE8 /* AppController.swift */,
 				8D060B942130BE530002CFE8 /* AppDelegate.swift */,
-				8D060B962130BE530002CFE8 /* ViewController.swift */,
+				8D060BBD2130CE1F0002CFE8 /* AppSettings.swift */,
+				8D060C052135EB8C0002CFE8 /* ViewController */,
 				8D060B9B2130BE560002CFE8 /* Assets.xcassets */,
 				8D060BBF2130CE390002CFE8 /* Extensions */,
 				8D060BC82130CE4C0002CFE8 /* Models */,
@@ -132,13 +141,6 @@
 				8D060B9D2130BE560002CFE8 /* LaunchScreen.storyboard */,
 				8D060BA02130BE560002CFE8 /* Info.plist */,
 				8D060BB92130CDBA0002CFE8 /* GoogleService-Info.plist */,
-				8D060BCF2130CE680002CFE8 /* ProfileViewController.swift */,
-				8D060BD32130CE7B0002CFE8 /* NavigationController.swift */,
-				8D060BD12130CE710002CFE8 /* ChatViewController.swift */,
-				8D060BA62130BE9E0002CFE8 /* LoginViewController.swift */,
-				8D060BA72130BE9E0002CFE8 /* LoginViewController.xib */,
-				8D060BB72130C9210002CFE8 /* CircularTransition.swift */,
-				8D060BBD2130CE1F0002CFE8 /* AppSettings.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -146,10 +148,13 @@
 		8D060BAA2130BEFE0002CFE8 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				8D060C032135E0360002CFE8 /* charts.png */,
 				8D060BD52130DB6A0002CFE8 /* camera.png */,
+				8D060BD721327EAE0002CFE8 /* chart.png */,
 				8D060BAB2130BEFE0002CFE8 /* login.png */,
 				8D060BAC2130BEFE0002CFE8 /* alert.png */,
 				8D060BAD2130BEFE0002CFE8 /* user.png */,
+				8D060C012134C8B90002CFE8 /* profile.png */,
 				8D060BAE2130BEFE0002CFE8 /* background.jpeg */,
 				8D060BAF2130BEFE0002CFE8 /* password.png */,
 				8D060BB02130BEFE0002CFE8 /* loginButton.png */,
@@ -176,6 +181,21 @@
 				8D060BCB2130CE4C0002CFE8 /* DatabaseRepresentation.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8D060C052135EB8C0002CFE8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8D060BCF2130CE680002CFE8 /* ProfileViewController.swift */,
+				8D060BD32130CE7B0002CFE8 /* NavigationController.swift */,
+				8D060BD12130CE710002CFE8 /* ChatViewController.swift */,
+				8D060BA62130BE9E0002CFE8 /* LoginViewController.swift */,
+				8D060BA72130BE9E0002CFE8 /* LoginViewController.xib */,
+				8D060BE4213325BA0002CFE8 /* Storyboard.storyboard */,
+				8D060BE621333E4E0002CFE8 /* ChartsViewController.swift */,
+				8D060BEC213374520002CFE8 /* ChartTableViewCell.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,12 +262,16 @@
 				8D060BB22130BEFF0002CFE8 /* alert.png in Resources */,
 				8D060BB52130BEFF0002CFE8 /* password.png in Resources */,
 				8D060B9F2130BE560002CFE8 /* LaunchScreen.storyboard in Resources */,
+				8D060C022134C8BA0002CFE8 /* profile.png in Resources */,
+				8D060C042135E0370002CFE8 /* charts.png in Resources */,
+				8D060BE5213325BB0002CFE8 /* Storyboard.storyboard in Resources */,
 				8D060BB32130BEFF0002CFE8 /* user.png in Resources */,
 				8D060BB12130BEFF0002CFE8 /* login.png in Resources */,
 				8D060BD62130DB6A0002CFE8 /* camera.png in Resources */,
 				8D060B9C2130BE560002CFE8 /* Assets.xcassets in Resources */,
 				8D060BBA2130CDBA0002CFE8 /* GoogleService-Info.plist in Resources */,
 				8D060BA92130BE9E0002CFE8 /* LoginViewController.xib in Resources */,
+				8D060BD821327EAE0002CFE8 /* chart.png in Resources */,
 				8D060BB62130BEFF0002CFE8 /* loginButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +287,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Chat/Pods-Chat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
@@ -277,6 +302,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
@@ -321,17 +347,17 @@
 				8D060BC42130CE390002CFE8 /* UIImage+Additions.swift in Sources */,
 				8D060BCE2130CE4C0002CFE8 /* DatabaseRepresentation.swift in Sources */,
 				8D060BCD2130CE4C0002CFE8 /* Channel.swift in Sources */,
+				8D060BE721333E4E0002CFE8 /* ChartsViewController.swift in Sources */,
 				8D060BA82130BE9E0002CFE8 /* LoginViewController.swift in Sources */,
 				8D060BBC2130CDEF0002CFE8 /* AppController.swift in Sources */,
 				8D060BBE2130CE1F0002CFE8 /* AppSettings.swift in Sources */,
 				8D060BC52130CE390002CFE8 /* UIView+Additions.swift in Sources */,
-				8D060B972130BE530002CFE8 /* ViewController.swift in Sources */,
 				8D060BD02130CE680002CFE8 /* ProfileViewController.swift in Sources */,
+				8D060BED213374520002CFE8 /* ChartTableViewCell.swift in Sources */,
 				8D060BD42130CE7B0002CFE8 /* NavigationController.swift in Sources */,
 				8D060BCC2130CE4C0002CFE8 /* Message.swift in Sources */,
 				8D060BC72130CE390002CFE8 /* UICollectionView+Additions.swift in Sources */,
 				8D060B952130BE530002CFE8 /* AppDelegate.swift in Sources */,
-				8D060BB82130C9210002CFE8 /* CircularTransition.swift in Sources */,
 				8D060BD22130CE710002CFE8 /* ChatViewController.swift in Sources */,
 				8D060BC62130CE390002CFE8 /* UIColor+Additions.swift in Sources */,
 			);
@@ -480,7 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = project.ChatInterfaceApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -499,7 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = project.ChatInterfaceApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

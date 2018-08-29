@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Charts View Controller-->
+        <scene sceneID="u9n-ZD-L7U">
+            <objects>
+                <viewController storyboardIdentifier="chartview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mkz-Be-B83" customClass="ChartsViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ImT-CF-500">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="w8K-80-axQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="aEL-Ut-XDq"/>
+                                    <constraint firstAttribute="width" constant="375" id="eNB-SR-ofs"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="620" id="NuG-oj-y2b" customClass="ChartTableViewCell" customModule="Chat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="620"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NuG-oj-y2b" id="lz7-99-1e8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="619.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szb-3U-v6u" customClass="BarChartView" customModule="Charts">
+                                                    <rect key="frame" x="15" y="6" width="345" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="345" id="Alx-LN-qiU"/>
+                                                        <constraint firstAttribute="height" constant="120" id="Wd0-eC-RyA"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-9Y-nu9" customClass="HorizontalBarChartView" customModule="Charts">
+                                                    <rect key="frame" x="15" y="133" width="345" height="128"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yl2-8c-W5h" customClass="LineChartView" customModule="Charts">
+                                                    <rect key="frame" x="230" y="289" width="130" height="136"/>
+                                                    <color key="backgroundColor" red="1" green="0.50223750479999996" blue="0.55283691639999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kaz-np-4Va" customClass="PieChartView" customModule="Charts">
+                                                    <rect key="frame" x="15" y="427" width="345" height="189"/>
+                                                    <color key="backgroundColor" red="1" green="0.78073583629999999" blue="0.77202972979999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HhS-UQ-YsC" customClass="LineChartView" customModule="Charts">
+                                                    <rect key="frame" x="15" y="289" width="130" height="136"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.33732876709999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Yl2-8c-W5h" firstAttribute="top" secondItem="Kaz-np-4Va" secondAttribute="bottom" constant="-327" id="0cl-P1-eNv"/>
+                                                <constraint firstAttribute="trailing" secondItem="szb-3U-v6u" secondAttribute="trailing" constant="15" id="2iL-YS-y7f"/>
+                                                <constraint firstItem="HhS-UQ-YsC" firstAttribute="trailing" secondItem="Yl2-8c-W5h" secondAttribute="trailing" constant="-215" id="2su-ff-RDZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Yl2-8c-W5h" secondAttribute="bottom" constant="184" id="2zn-Dw-Zaf"/>
+                                                <constraint firstItem="szb-3U-v6u" firstAttribute="top" secondItem="lz7-99-1e8" secondAttribute="top" constant="6" id="5od-Zk-hxA"/>
+                                                <constraint firstItem="Kaz-np-4Va" firstAttribute="leading" secondItem="lz7-99-1e8" secondAttribute="leading" constant="15" id="86d-K1-6Ms"/>
+                                                <constraint firstItem="szb-3U-v6u" firstAttribute="top" secondItem="lz7-99-1e8" secondAttribute="top" constant="6" id="B0s-Jq-KD4"/>
+                                                <constraint firstItem="HhS-UQ-YsC" firstAttribute="top" secondItem="Ey9-9Y-nu9" secondAttribute="bottom" constant="28" id="EaM-4G-r6r"/>
+                                                <constraint firstAttribute="bottom" secondItem="szb-3U-v6u" secondAttribute="bottom" constant="493.5" id="MAx-qk-xnM"/>
+                                                <constraint firstAttribute="trailing" secondItem="Kaz-np-4Va" secondAttribute="trailing" constant="15" id="Nx9-Zx-zo5"/>
+                                                <constraint firstItem="szb-3U-v6u" firstAttribute="trailing" secondItem="Ey9-9Y-nu9" secondAttribute="trailing" id="OVA-ci-YUf"/>
+                                                <constraint firstItem="Ey9-9Y-nu9" firstAttribute="top" secondItem="szb-3U-v6u" secondAttribute="bottom" constant="7" id="S0O-PB-DEN"/>
+                                                <constraint firstItem="szb-3U-v6u" firstAttribute="leading" secondItem="lz7-99-1e8" secondAttribute="leading" constant="15" id="ViQ-Fq-nde"/>
+                                                <constraint firstItem="HhS-UQ-YsC" firstAttribute="leading" secondItem="Yl2-8c-W5h" secondAttribute="leading" constant="-215" id="W8Z-wY-Aiv"/>
+                                                <constraint firstItem="Kaz-np-4Va" firstAttribute="top" secondItem="HhS-UQ-YsC" secondAttribute="bottom" constant="2" id="csY-Ma-KhR"/>
+                                                <constraint firstAttribute="bottom" secondItem="HhS-UQ-YsC" secondAttribute="bottom" constant="194.5" id="h9A-Bt-DO5"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ey9-9Y-nu9" secondAttribute="bottom" constant="358.5" id="hFj-mD-3Wo"/>
+                                                <constraint firstAttribute="trailing" secondItem="HhS-UQ-YsC" secondAttribute="trailing" constant="230" id="jSi-ig-lRb"/>
+                                                <constraint firstAttribute="bottom" secondItem="Kaz-np-4Va" secondAttribute="bottom" constant="3.5" id="m0Q-Pw-b6P"/>
+                                                <constraint firstItem="HhS-UQ-YsC" firstAttribute="leading" secondItem="lz7-99-1e8" secondAttribute="leading" constant="15" id="mwz-zp-wlB"/>
+                                                <constraint firstItem="szb-3U-v6u" firstAttribute="leading" secondItem="Ey9-9Y-nu9" secondAttribute="leading" id="wx7-am-5qg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="barChart" destination="szb-3U-v6u" id="gxe-k7-g4v"/>
+                                            <outlet property="dueLineChart" destination="Yl2-8c-W5h" id="8Io-gi-MOF"/>
+                                            <outlet property="horizontalBarchart" destination="Ey9-9Y-nu9" id="aa4-fo-SxI"/>
+                                            <outlet property="lineChart" destination="HhS-UQ-YsC" id="bH3-ad-1nY"/>
+                                            <outlet property="pieChart" destination="Kaz-np-4Va" id="olP-WQ-DUC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mkz-Be-B83" id="mB6-rZ-0aS"/>
+                                    <outlet property="delegate" destination="mkz-Be-B83" id="33s-uO-Jcd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w8K-80-axQ" firstAttribute="leading" secondItem="3XK-iF-A20" secondAttribute="leading" id="C3C-2h-I3e"/>
+                            <constraint firstItem="w8K-80-axQ" firstAttribute="top" secondItem="ImT-CF-500" secondAttribute="top" id="Mew-rq-oD7"/>
+                            <constraint firstItem="w8K-80-axQ" firstAttribute="bottom" secondItem="3XK-iF-A20" secondAttribute="bottom" id="PK3-qf-qAr"/>
+                            <constraint firstItem="w8K-80-axQ" firstAttribute="trailing" secondItem="3XK-iF-A20" secondAttribute="trailing" id="i9R-7T-hLC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3XK-iF-A20"/>
+                    </view>
+                    <connections>
+                        <outlet property="TableView" destination="w8K-80-axQ" id="dTt-BZ-NYC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCU-Yc-ZuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.59999999999999" y="113.79310344827587"/>
+        </scene>
+    </scenes>
+</document>
